@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/*Globales*/
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+
+/*Utilidades*/
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.texto-derecha {
+    text-align: right;
+}
+
+.texto-izq {
+    text-align: left!important;
+}
+
+.seccion {
+    margin-top: 8rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.linea::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: .5rem;
+    background: #ff8e3d;
+    margin-top: 1rem;
+}
+
+
+/* Botones */
+
+.btn {
+    display: inline-block;
+    width: 30rem;
+    padding: 1.5rem 8rem;
+    margin: 1rem 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    line-height: 1!important;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #fff5e9;
+    color: #402e32;
+}
+
+.btn-primary:hover {
+    background-color: #352c2ee8;
+    color: #fff5e9;
+    transition: 1s;
+}
+
+.btn-secundary {
+    border: 3px solid #fff5e963;
+    color: #fff5e9;
+}
+
+.btn-secundary:hover {
+    background-color: #fff5e93d;
+    color: #fff5e9;
+    transition: 1s;
+}
+
+/* Reloj */
+
+.wrap {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.widget {
+	width: 100%;
+	margin: 2em;
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1;
+}
+
+.fecha {
+	text-align: center;
+	font-size:1.5em;
+	margin-bottom: 0.3125rem;
+
+	width: 100%;
+}
+
+.reloj {
+	width: 100%;
+	font-size: 8rem;
+	text-align: center;
+}
+
+.reloj p {
+    padding: 0;
+    margin: 0;
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 2rem;
+	display: block;
+}
