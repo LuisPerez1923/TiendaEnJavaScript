@@ -10,34 +10,164 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="contenedor">
-            <h1>Página web</h1>
+        <header class="site-header inicio">
+            <div class="fondo-transparente">
+                <div class="contenido-header contenedor">
+                    <div class="barra">
+                        <h1>Artesanía Huichol</h1>
 
-            <div class="wrap">
-                <div class="widget">
-                    <div class="fecha">
-                        <p id="dia" class="dia"></p>
-                        <p>/</p>
-                        <p id="mes" class="mes"></p>
-                        <p>/</p>
-                        <p id="year" class="year"></p>
+                        <nav class="navegacion">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="pedido.html">Pedido</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
                     </div>
-            
-                    <div class="reloj">
-                        <p id="horas" class="horas"></p>
-                        <p>:</p>
-                        <p id="minutos" class="minutos"></p>
-                        <p>:</p>
-                        <div class="caja-segundos">
-                            <p id="ampm" class="ampm"></p>
-                            <p id="segundos" class="segundos"></p>
+
+                    <div class="wrap">
+                        <div class="widget">
+                            <div class="fecha">
+                                <p id="dia" class="dia"></p>
+                                <p>/</p>
+                                <p id="mes" class="mes"></p>
+                                <p>/</p>
+                                <p id="year" class="year"></p>
+                            </div>
+                    
+                            <div class="reloj">
+                                <p id="horas" class="horas"></p>
+                                <p>:</p>
+                                <p id="minutos" class="minutos"></p>
+                                <p>:</p>
+                                <div class="caja-segundos">
+                                    <p id="ampm" class="ampm"></p>
+                                    <p id="segundos" class="segundos"></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                    
+                </div>
             </div>
+        </header>
+        
+           
+        <main class="contenido-principal"> <!--aqui comienza mi seccion main-->
+            <div class="contenedor">
+                <h2 class="centrar-texto">nuestros productos</h2>
+
+                <div class="contenedor-productos"> <!--aqui empieza contenedor de productos-->
+    
+    
+                    <div class="producto"> 
+                        <div class="contenido-producto"> 
+                            <img src="../img/calavera-huichol2.jpg" alt="">
+        
+                            <div class="precio-producto"> 
+                                <h3>calavera huichol</h3>
+                                <p>$2500.00</p>
+                            </div>
+        
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sunt voluptatem corrupti impedit labore voluptate? Debitis quisquam commodi ipsum voluptas laudantium. Assumenda expedita repellendus hic molestias odit fugiat voluptates nostrum!</p>
+        
+                            <button class="btn btn-primary">Comprar</button>
+                        </div> 
+                    </div>
+    
+    
+                    <div class="producto" id="calavera-central"> 
+                        <div class="contenido-producto"> 
+                            <img src="../img/calavera-huichol.jpg" alt="">
+        
+                            <div class="precio-producto"> 
+                                <h3>calavera huichol</h3>
+                                <p>$2500.00</p>
+                            </div>
+        
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sunt voluptatem corrupti impedit labore voluptate? Debitis quisquam commodi ipsum voluptas laudantium. Assumenda expedita repellendus hic molestias odit fugiat voluptates nostrum!</p>
+        
+                            <button class="btn btn-primary">Comprar</button>
+                        </div> 
+                    </div>
+    
+    
+                    <div class="producto"> 
+                        <div class="contenido-producto"> 
+                            <img src="../img/calavera-huichol3.jpg" alt="">
+        
+                            <div class="precio-producto"> 
+                                <h3>calavera huichol</h3>
+                                <p>$2500.00</p>
+                            </div>
+        
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sunt voluptatem corrupti impedit labore voluptate? Debitis quisquam commodi ipsum voluptas laudantium. Assumenda expedita repellendus hic molestias odit fugiat voluptates nostrum!</p>
+        
+                            <button class="btn btn-primary">Comprar</button>
+                        </div> 
+                    </div>
+    
+    
+                </div> <!--aqui termina contenedor de productos-->
+            </div>
+            
+        </main> <!--aqui termina mi seccion main-->
+
+        <div class="parallax">
+
         </div>
-        <!--Archivo JS-->
-       <script src="../JS/main.js"></script>
-       <script src="../JS/reloj.js"></script>
+           
+
+        <div class="formulario-registro contenedor">
+            <h2 class="centrar-texto">Resgistro de producto</h2>
+            <form class="agregarProducto" action="index.html">
+                <fieldset>
+                    <legend>Información del Producto</legend>
+
+                    <label for="nombreProducto">Nombre del producto:</label>
+                    <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+
+                    <label for="categoriaProducto">Categoría del producto:</label>
+                    <select id="categoriaProducto">
+                        <option value="" disabled selected>--Seleccione--</option>
+                        <option value="celular">Celular</option>
+                        <option value="smartwatch">Smartwatch</option>
+                        <option value="camara">Cámara</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="computadora">Computadora</option>
+                    </select>
+
+                    <label for="precioProducto">Precio:</label>
+                    <input type="number" min="0" max="20000" step="1">
+
+                    <input type="submit" value="Enviar" class="btn">
+                </fieldset>
+
+                <!--solo select y radio button se acceden a su valor por medio de value y no por name-->
+            </form>
+        </div>
+
+        <footer class="site-footer">
+            <div class="fondo-transparente">
+                <div class="contenido-footer contenedor">
+                    <div class="barra">
+                        <h1>Artesanía Huichol</h1>
+        
+                        <nav class="navegacion">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="pedido.html">Pedido</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Archivos JS-->
+        <script src="../JS/main.js"></script>
+        <script src="../JS/reloj.js"></script>
     </body>
 </html>
